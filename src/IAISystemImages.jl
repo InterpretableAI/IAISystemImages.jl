@@ -10,6 +10,7 @@ function install()
   if isinteractive()
     names = [split(n, "__") for n in _install.names]
 
+    # Get IAI version selection
     iai_versions = sort!(unique(getindex.(names, 2)), rev=true)
     iai_versions_disp = replace.(iai_versions, "IAI_" => "", "_" => ".")
     printstyled("Pick the IAI version you would like to install.\n"; bold=true, color=:blue)
@@ -17,7 +18,9 @@ function install()
     iai_index = TerminalMenus.request(iai_menu)
     iai_version = iai_versions_disp[iai_index]
 
+    # Get Julia version selection
     julia_versions = sort!(unique(
+        # Filter Julia versions to those supported by the selected IAI release
         n[1] for n in names if contains(n[2], iai_versions[iai_index])
     ), rev=true)
     julia_versions_disp = replace.(julia_versions, "Julia_" => "", "_" => ".")
@@ -29,13 +32,15 @@ function install()
     julia_index = TerminalMenus.request(julia_menu)
     julia_version = julia_versions_disp[julia_index]
 
+    # Get whether to create +IAI channel
     printstyled("Create `+IAI` alias for this version?\n"; bold=true, color=:blue)
     alias_menu = TerminalMenus.RadioMenu(["yes", "no"])
     create_alias = (TerminalMenus.request(alias_menu) == 1)
 
+    # Run install
     install_version(; julia_version, iai_version, create_alias)
   else
-    error("cannot use interactive _install in non-interactive Julia session.")
+    error("cannot use interactive install in non-interactive Julia session.")
   end
 end
 
