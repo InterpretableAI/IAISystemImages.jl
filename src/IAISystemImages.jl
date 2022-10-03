@@ -128,8 +128,13 @@ function install_version(;
     if success(`juliaup add $("$julia_version")`)
       @info "Added `juliaup` channel `$(julia_version)`"
     end
+
     if VersionNumber(julia_version) != VERSION
-      @warn "ensure that you install `$package` in your global environment for Julia `$julia_version`."
+      @warn """
+      ensure that you install `$package` in your global environment for Julia `$julia_version`. You can do this by running the following command in a terminal:
+
+      julia +$julia_version -e 'using Pkg; Pkg.add(url="https://github.com/InterpretableAI/IAISystemImages.jl")'
+      """
     end
   else
     @warn "`juliaup` is required for this package to work."
