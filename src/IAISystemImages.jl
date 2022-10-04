@@ -32,13 +32,8 @@ function install()
     julia_index = TerminalMenus.request(julia_menu)
     julia_version = julia_versions_disp[julia_index]
 
-    # Get whether to create +IAI channel
-    printstyled("Create `+IAI` alias for this version?\n"; bold=true, color=:blue)
-    alias_menu = TerminalMenus.RadioMenu(["yes", "no"])
-    create_alias = (TerminalMenus.request(alias_menu) == 1)
-
     # Run install
-    install_version(; julia_version, iai_version, create_alias)
+    install_version(; julia_version, iai_version)
   else
     error("cannot use interactive install in non-interactive Julia session.")
   end
@@ -47,7 +42,6 @@ end
 function install_version(;
     julia_version::Union{AbstractString,VersionNumber},
     iai_version::Union{AbstractString,VersionNumber},
-    create_alias::Bool,
   )
   if julia_version isa VersionNumber
     julia_version = "v$julia_version"
@@ -111,16 +105,6 @@ function install_version(;
     ```
     if !success(`juliaup link $channel $loader`)
       @warn "failed to link `$channel`."
-    end
-
-    if create_alias
-      alias = "IAI"
-      if !success(`juliaup remove $alias`)
-        @warn "failed to remove `$alias`."
-      end
-      if !success(`juliaup link $alias julia $("+$channel")`)
-        @warn "failed to link `$channel` to `$alias`."
-      end
     end
 
     # Ensure that we actually have the exact channel versions required, and
