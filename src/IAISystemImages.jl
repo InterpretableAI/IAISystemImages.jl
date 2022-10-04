@@ -15,7 +15,7 @@ function install()
     iai_versions_disp = replace.(replace.(iai_versions, "IAI_" => ""),
                                  "_" => ".")
     printstyled("Pick the IAI version you would like to install:\n"; bold=true, color=:blue)
-    iai_menu = TerminalMenus.RadioMenu(iai_versions_disp)
+    iai_menu = TerminalMenus.RadioMenu(iai_versions_disp; charset=:ascii)
     iai_index = TerminalMenus.request(iai_menu)
     iai_version = iai_versions_disp[iai_index]
 
@@ -29,7 +29,8 @@ function install()
     printstyled("Pick the Julia version you would like to use:\n"; bold=true, color=:blue)
     julia_menu = TerminalMenus.RadioMenu(
         [jv * ifelse(VersionNumber(jv) == VERSION, " (current)", "")
-        for jv in julia_versions_disp]
+         for jv in julia_versions_disp];
+        charset=:ascii,
     )
     julia_index = TerminalMenus.request(julia_menu)
     julia_version = julia_versions_disp[julia_index]
