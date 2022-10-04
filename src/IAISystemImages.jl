@@ -137,7 +137,7 @@ function install_version(;
       """
     end
   else
-    @warn "`juliaup` is required for this package to work."
+    error("`juliaup` is required for this package to work.")
   end
 end
 
