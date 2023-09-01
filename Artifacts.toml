@@ -3333,12 +3333,12 @@ os = "linux"
     url = "https://iai-system-images.s3.amazonaws.com/linux/julia1.9.2/v3.2.0/sys-linux-julia1.9.2-iai3.2.0.tar.gz"
 [[Julia_v1_9_2__IAI_v3_2_0]]
 arch = "x86_64"
-git-tree-sha1 = "8cd4e24653175dc9e049cca7a5f2e3adfe0b1902"
+git-tree-sha1 = "5db8b8ac9d0359e55723454c34f19dfece111834"
 lazy = true
 os = "macos"
 
     [[Julia_v1_9_2__IAI_v3_2_0.download]]
-    sha256 = "97d4c302960ddf96e7fd37d94dd672e2fea0537ff9f8c3297c4f5dc6f329cde8"
+    sha256 = "ad07871756931fb227a1340939495603e801089f867538ff4854452974e30342"
     url = "https://iai-system-images.s3.amazonaws.com/macos/julia1.9.2/v3.2.0/sys-macos-julia1.9.2-iai3.2.0.tar.gz"
 [[Julia_v1_9_2__IAI_v3_2_0]]
 arch = "aarch64"
