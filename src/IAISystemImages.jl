@@ -3,8 +3,14 @@ module IAISystemImages
 using SystemImageLoader
 import REPL.TerminalMenus
 
+include("artifacts.jl")
+
 const _install = include("install.jl")
 const config = ArtifactConfig(_install)
+
+function install_artifacts(artifacts_toml)
+  ensure_all_artifacts_installed(artifacts_toml)
+end
 
 function install()
   if isinteractive()
@@ -84,7 +90,15 @@ function install_version(;
         "No release exists for the chosen Julia and IAI versions"
     ))
   end
-  _install.lookup(name)
+
+  # Download image artifact
+  install_dir = _install.lookup(name)
+
+
+  # Install artifacts if needed
+  artifacts_toml = joinpath(install_dir, "environments", name, "Artifacts.toml")
+  isfile(artifacts_toml) && install_artifacts(artifacts_toml)
+
 
   # Create juliaup channels
   if SystemImageLoader.has_juliaup()
