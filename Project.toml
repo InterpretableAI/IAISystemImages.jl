@@ -4,5 +4,6 @@ authors = ["Interpretable AI <info@interpretable.ai>"]
 version = "0.1.0"
 
 [deps]
+Pkg = "44cfe95a-1eb2-52ea-b672-e2afdf69b78f"
 REPL = "3fa0cd96-eef1-5676-8a61-b3b8758bbffb"
 SystemImageLoader = "dc30da40-fce8-4b3c-960e-234cbed6f4a5"
