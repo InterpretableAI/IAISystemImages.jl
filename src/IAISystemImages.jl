@@ -26,12 +26,13 @@ function install()
     iai_version = iai_versions_disp[iai_index]
 
     # Get Julia version selection
-    julia_versions = sort!(unique(
+    julia_versions = unique(
         # Filter Julia versions to those supported by the selected IAI release
         n[1] for n in names if contains(n[2], iai_versions[iai_index])
-    ), rev=true)
+    )
     julia_versions_disp = replace.(replace.(julia_versions, "Julia_" => ""),
                                    "_" => ".")
+    sort!(julia_versions_disp, rev=true, by=VersionNumber)
     printstyled("Pick the Julia version you would like to use:\n"; bold=true, color=:blue)
     julia_menu = TerminalMenus.RadioMenu(
         [jv * ifelse(VersionNumber(jv) == VERSION, " (current)", "")
