@@ -8,9 +8,11 @@ include("artifacts.jl")
 const _install = include("install.jl")
 const config = ArtifactConfig(_install)
 
-function install_artifacts(artifacts_toml, julia_version)
+function install_artifacts(artifacts_toml, julia_version=nothing)
   platform = HostPlatform()
-  platform["julia_version"] = julia_version
+  if !isnothing(julia_version)
+    platform["julia_version"] = julia_version
+  end
   ensure_all_artifacts_installed(artifacts_toml; platform)
 end
 
