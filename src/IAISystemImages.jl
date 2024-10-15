@@ -8,8 +8,10 @@ include("artifacts.jl")
 const _install = include("install.jl")
 const config = ArtifactConfig(_install)
 
-function install_artifacts(artifacts_toml)
-  ensure_all_artifacts_installed(artifacts_toml)
+function install_artifacts(artifacts_toml, julia_version)
+  platform = HostPlatform()
+  platform["julia_version"] = julia_version
+  ensure_all_artifacts_installed(artifacts_toml; platform)
 end
 
 function install()
@@ -98,7 +100,7 @@ function install_version(;
 
   # Install artifacts if needed
   artifacts_toml = joinpath(install_dir, "environments", name, "Artifacts.toml")
-  isfile(artifacts_toml) && install_artifacts(artifacts_toml)
+  isfile(artifacts_toml) && install_artifacts(artifacts_toml, julia_version)
 
 
   # Create juliaup channels
