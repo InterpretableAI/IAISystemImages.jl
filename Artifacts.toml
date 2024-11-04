@@ -741,12 +741,12 @@ os = "macos"
     url = "https://iai-system-images.s3.amazonaws.com/macos/julia1.10.6/v3.2.2/sys-macos-julia1.10.6-iai3.2.2.tar.gz"
 [[Julia_v1_10_6__IAI_v3_2_2]]
 arch = "aarch64"
-git-tree-sha1 = "a6917c6720ac2b5145f8311393e9f56acd71c0a7"
+git-tree-sha1 = "7df8debf9714c4a1f8894ff0162695c0b66ebfc3"
 lazy = true
 os = "macos"
 
     [[Julia_v1_10_6__IAI_v3_2_2.download]]
-    sha256 = "511d4a62a1d6c58c2921c929d457701cacb9c97d5ed2ec1a04667331753854d5"
+    sha256 = "d05a4f90eccb4d68b0aaa3f6eeacddc35d5d4112f106aab01d867f7c6e9762b6"
     url = "https://iai-system-images.s3.amazonaws.com/macos_aarch64/julia1.10.6/v3.2.2/sys-macos_aarch64-julia1.10.6-iai3.2.2.tar.gz"
 [[Julia_v1_10_6__IAI_v3_2_2]]
 arch = "x86_64"
