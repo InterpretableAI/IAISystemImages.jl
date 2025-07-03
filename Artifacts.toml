@@ -1368,40 +1368,40 @@ os = "windows"
 
 [[Julia_v1_11_5__IAI_dev]]
 arch = "x86_64"
-git-tree-sha1 = "b7b830d808de2698b1e1c835ff424890766680b3"
+git-tree-sha1 = "ff19c639952d999e343a65d1d7aae4ba924fbb4c"
 lazy = true
 libc = "glibc"
 os = "linux"
 
     [[Julia_v1_11_5__IAI_dev.download]]
-    sha256 = "922b7c07de09f6932854dd81b86f46283103d104b2707ce36bffed200daa85c5"
+    sha256 = "50db57e82d0233ebe63df028ed227d901a1236716d343baf8020c954511f5e0c"
     url = "https://iai-system-images.s3.amazonaws.com/linux/julia1.11.5/master/latest.tar.gz"
 [[Julia_v1_11_5__IAI_dev]]
 arch = "x86_64"
-git-tree-sha1 = "7a7226f43b3240eb70c541f2e63695d934b621c2"
+git-tree-sha1 = "2225085f2d8bc1db802efb7ca5cce4cc1792889c"
 lazy = true
 os = "macos"
 
     [[Julia_v1_11_5__IAI_dev.download]]
-    sha256 = "8da307f048a9337a2e234e6b601e8d78ddea45b31288d24e66be245082ea3b37"
+    sha256 = "a08e820e19f46cd2ce7e7a0a4e484abbd92e1031e5d42031748f5da1e28be560"
     url = "https://iai-system-images.s3.amazonaws.com/macos/julia1.11.5/master/latest.tar.gz"
 [[Julia_v1_11_5__IAI_dev]]
 arch = "aarch64"
-git-tree-sha1 = "5edad2f9517404cb65922b85a94b5a263aae9e73"
+git-tree-sha1 = "3f2673ab29fa2651628cf213fcef6b9468945da5"
 lazy = true
 os = "macos"
 
     [[Julia_v1_11_5__IAI_dev.download]]
-    sha256 = "ffb076a010a04a857a3a0e5f321a0f809108d47932b87ca1db97e1e53bbbf7ea"
+    sha256 = "6e8a9eecd188040f72128a21a1674925532689b56fe3c72fa4958239c5851dc7"
     url = "https://iai-system-images.s3.amazonaws.com/macos_aarch64/julia1.11.5/master/latest.tar.gz"
 [[Julia_v1_11_5__IAI_dev]]
 arch = "x86_64"
-git-tree-sha1 = "46ef5cbc4b948e72b3648110d0a4e0e27cd9c55f"
+git-tree-sha1 = "2130d6fe17217046df9b69d30d51414b5c995a41"
 lazy = true
 os = "windows"
 
     [[Julia_v1_11_5__IAI_dev.download]]
-    sha256 = "ae0ae4198622a27720970573368ade85c006a9d7c289ce339d7fa3496053663b"
+    sha256 = "e2a013c889dd0e28b0292fdb8b121f926ee24485c2f0d93c917f84dd2f403af5"
     url = "https://iai-system-images.s3.amazonaws.com/win64/julia1.11.5/master/latest.tar.gz"
 
 [[Julia_v1_11_5__IAI_v3_2_2]]
