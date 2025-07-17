@@ -114,40 +114,40 @@ os = "windows"
 
 [[Julia_v1_10_10__IAI_dev]]
 arch = "x86_64"
-git-tree-sha1 = "8823d2863b0dc8e3cd697c80d31d9696e7486245"
+git-tree-sha1 = "961ce2989612a78061bb1529fc479143bdae92e9"
 lazy = true
 libc = "glibc"
 os = "linux"
 
     [[Julia_v1_10_10__IAI_dev.download]]
-    sha256 = "f75085d3945a5c4460302ce36fdf9a77a261857fd94c2522f906457ed3d93cd3"
+    sha256 = "3d1eb546c496d4a88554db894fd29542b7c1cb2716f4cd1b2790bdb3ce895f1c"
     url = "https://iai-system-images.s3.amazonaws.com/linux/julia1.10.10/master/latest.tar.gz"
 [[Julia_v1_10_10__IAI_dev]]
 arch = "x86_64"
-git-tree-sha1 = "1ad20d77e63f547160fbd3dbc8fad2e05b02073d"
+git-tree-sha1 = "b386e1f8430603baef0b860202fe4688e0aa406e"
 lazy = true
 os = "macos"
 
     [[Julia_v1_10_10__IAI_dev.download]]
-    sha256 = "c54d009d14c5269ce61ff3f206e7dd7a7320d6831e6461dbc9329371ee5734c2"
+    sha256 = "11102e982ae885f583ceddbc28475960e22229acc76e930e8fbec62257606826"
     url = "https://iai-system-images.s3.amazonaws.com/macos/julia1.10.10/master/latest.tar.gz"
 [[Julia_v1_10_10__IAI_dev]]
 arch = "aarch64"
-git-tree-sha1 = "4d3c2f355ee81b17b5733b39f9a2188880730c32"
+git-tree-sha1 = "86a78d17eff2477885746a23c22cc7a38daa3644"
 lazy = true
 os = "macos"
 
     [[Julia_v1_10_10__IAI_dev.download]]
-    sha256 = "1fb06a063f5b539ca8a242658652fff1553065f47fb53f3d8130570b8f7450ae"
+    sha256 = "ff8f770d67527f0bc9e5e961c73b42817769941bb988860a047710420701f7f9"
     url = "https://iai-system-images.s3.amazonaws.com/macos_aarch64/julia1.10.10/master/latest.tar.gz"
 [[Julia_v1_10_10__IAI_dev]]
 arch = "x86_64"
-git-tree-sha1 = "0583db12608ab07431d7db707f589c908381a5bb"
+git-tree-sha1 = "8d853d1c2e8142f36bb61b07f0126a8c26668196"
 lazy = true
 os = "windows"
 
     [[Julia_v1_10_10__IAI_dev.download]]
-    sha256 = "dad42041348c13d71adf873e43b659addc26070042e6cc028ef9beabc2b5212c"
+    sha256 = "03c33b9d5d4eb01086fccf22400373cbf005a40334746c76cbd0d73c231118a1"
     url = "https://iai-system-images.s3.amazonaws.com/win64/julia1.10.10/master/latest.tar.gz"
 
 [[Julia_v1_10_10__IAI_v3_2_2]]
@@ -1517,6 +1517,82 @@ os = "windows"
     [[Julia_v1_11_5__IAI_v3_2_2.download]]
     sha256 = "cda4d5e0ab91480d2d94e90f58f015446c6d25bf441cdac56ee7abf87ef5e19d"
     url = "https://iai-system-images.s3.amazonaws.com/win64/julia1.11.5/v3.2.2/sys-win64-julia1.11.5-iai3.2.2.tar.gz"
+
+[[Julia_v1_11_6__IAI_dev]]
+arch = "x86_64"
+git-tree-sha1 = "6217a4e3ed8aa84fa4d34909a60b90930d274803"
+lazy = true
+libc = "glibc"
+os = "linux"
+
+    [[Julia_v1_11_6__IAI_dev.download]]
+    sha256 = "bf00ed2e75fe3464c084f6c27165a32cc5367990da5509db702fda80c43aaea8"
+    url = "https://iai-system-images.s3.amazonaws.com/linux/julia1.11.6/master/latest.tar.gz"
+[[Julia_v1_11_6__IAI_dev]]
+arch = "x86_64"
+git-tree-sha1 = "3d7628a3d8482f85fb78d146fecc28ab321bb23c"
+lazy = true
+os = "macos"
+
+    [[Julia_v1_11_6__IAI_dev.download]]
+    sha256 = "efea138e82b26db344329361da81fd72abf469a40ee30a9146be3afeb6edfb2a"
+    url = "https://iai-system-images.s3.amazonaws.com/macos/julia1.11.6/master/latest.tar.gz"
+[[Julia_v1_11_6__IAI_dev]]
+arch = "aarch64"
+git-tree-sha1 = "4220481bced1daf3315b8f63c299ddb40346a94d"
+lazy = true
+os = "macos"
+
+    [[Julia_v1_11_6__IAI_dev.download]]
+    sha256 = "d1c3c1b1a3e519d8e72657ccad783cfdb36ea16151da6d5d242b1ad94cc37108"
+    url = "https://iai-system-images.s3.amazonaws.com/macos_aarch64/julia1.11.6/master/latest.tar.gz"
+[[Julia_v1_11_6__IAI_dev]]
+arch = "x86_64"
+git-tree-sha1 = "7de7701d04c44eff916c29da9e3361b24a0b8b7f"
+lazy = true
+os = "windows"
+
+    [[Julia_v1_11_6__IAI_dev.download]]
+    sha256 = "d9bedf1c0cb8ab34d89f0a810abded22882ec4703d56951efae7650ada9e5bba"
+    url = "https://iai-system-images.s3.amazonaws.com/win64/julia1.11.6/master/latest.tar.gz"
+
+[[Julia_v1_11_6__IAI_v3_2_2]]
+arch = "x86_64"
+git-tree-sha1 = "13e0acba8c4226f2fa933e6e44984f85dec4d01f"
+lazy = true
+libc = "glibc"
+os = "linux"
+
+    [[Julia_v1_11_6__IAI_v3_2_2.download]]
+    sha256 = "fa72e63659c56e0be69b72de49c755df229f18c698fca728b32cf8c57c6e9343"
+    url = "https://iai-system-images.s3.amazonaws.com/linux/julia1.11.6/v3.2.2/sys-linux-julia1.11.6-iai3.2.2.tar.gz"
+[[Julia_v1_11_6__IAI_v3_2_2]]
+arch = "x86_64"
+git-tree-sha1 = "290b2e3dd53752216ecf8753bc558490ca27fc5e"
+lazy = true
+os = "macos"
+
+    [[Julia_v1_11_6__IAI_v3_2_2.download]]
+    sha256 = "cac40a43be19bbf04aeda7faf621613a00cdea32bf54aee65a4d455ecb13f4fa"
+    url = "https://iai-system-images.s3.amazonaws.com/macos/julia1.11.6/v3.2.2/sys-macos-julia1.11.6-iai3.2.2.tar.gz"
+[[Julia_v1_11_6__IAI_v3_2_2]]
+arch = "aarch64"
+git-tree-sha1 = "31a156eb4f043951c8772ef951a07897834341a8"
+lazy = true
+os = "macos"
+
+    [[Julia_v1_11_6__IAI_v3_2_2.download]]
+    sha256 = "827fdacddd4472b937e10afd1e69dfc2329dc104a7b56ea333478652d48f6dcb"
+    url = "https://iai-system-images.s3.amazonaws.com/macos_aarch64/julia1.11.6/v3.2.2/sys-macos_aarch64-julia1.11.6-iai3.2.2.tar.gz"
+[[Julia_v1_11_6__IAI_v3_2_2]]
+arch = "x86_64"
+git-tree-sha1 = "b236f61f28178bcdfc7268222cd3f0fde3099c91"
+lazy = true
+os = "windows"
+
+    [[Julia_v1_11_6__IAI_v3_2_2.download]]
+    sha256 = "48477d66865ad455d9523134351ea831b880e7c0cfbeb688ea16568f6ea055f1"
+    url = "https://iai-system-images.s3.amazonaws.com/win64/julia1.11.6/v3.2.2/sys-win64-julia1.11.6-iai3.2.2.tar.gz"
 
 [[Julia_v1_6_0__IAI_v2_2_0]]
 arch = "x86_64"
