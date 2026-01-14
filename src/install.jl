@@ -349,12 +349,18 @@ elseif Sys.iswindows()
       artifact"Julia_v1_11_6__IAI_dev",
       artifact"Julia_v1_11_7__IAI_v3_2_2",
       artifact"Julia_v1_11_7__IAI_dev",
+      artifact"Julia_v1_11_8__IAI_v3_2_2",
+      artifact"Julia_v1_11_8__IAI_dev",
       artifact"Julia_v1_12_0__IAI_v3_2_2",
       artifact"Julia_v1_12_0__IAI_dev",
       artifact"Julia_v1_12_1__IAI_v3_2_2",
       artifact"Julia_v1_12_1__IAI_dev",
       artifact"Julia_v1_12_2__IAI_v3_2_2",
       artifact"Julia_v1_12_2__IAI_dev",
+      artifact"Julia_v1_12_3__IAI_v3_2_2",
+      artifact"Julia_v1_12_3__IAI_dev",
+      artifact"Julia_v1_12_4__IAI_v3_2_2",
+      artifact"Julia_v1_12_4__IAI_dev",
   )
 elseif Sys.isapple() && Sys.ARCH == :aarch64
   @ArtifactInstaller(
@@ -444,12 +450,18 @@ elseif Sys.isapple() && Sys.ARCH == :aarch64
       artifact"Julia_v1_11_6__IAI_dev",
       artifact"Julia_v1_11_7__IAI_v3_2_2",
       artifact"Julia_v1_11_7__IAI_dev",
+      artifact"Julia_v1_11_8__IAI_v3_2_2",
+      artifact"Julia_v1_11_8__IAI_dev",
       artifact"Julia_v1_12_0__IAI_v3_2_2",
       artifact"Julia_v1_12_0__IAI_dev",
       artifact"Julia_v1_12_1__IAI_v3_2_2",
       artifact"Julia_v1_12_1__IAI_dev",
       artifact"Julia_v1_12_2__IAI_v3_2_2",
       artifact"Julia_v1_12_2__IAI_dev",
+      artifact"Julia_v1_12_3__IAI_v3_2_2",
+      artifact"Julia_v1_12_3__IAI_dev",
+      artifact"Julia_v1_12_4__IAI_v3_2_2",
+      artifact"Julia_v1_12_4__IAI_dev",
   )
 elseif Sys.islinux()
   @ArtifactInstaller(
@@ -628,11 +640,17 @@ elseif Sys.islinux()
       artifact"Julia_v1_11_6__IAI_dev",
       artifact"Julia_v1_11_7__IAI_v3_2_2",
       artifact"Julia_v1_11_7__IAI_dev",
+      artifact"Julia_v1_11_8__IAI_v3_2_2",
+      artifact"Julia_v1_11_8__IAI_dev",
       artifact"Julia_v1_12_0__IAI_v3_2_2",
       artifact"Julia_v1_12_0__IAI_dev",
       artifact"Julia_v1_12_1__IAI_v3_2_2",
       artifact"Julia_v1_12_1__IAI_dev",
       artifact"Julia_v1_12_2__IAI_v3_2_2",
       artifact"Julia_v1_12_2__IAI_dev",
+      artifact"Julia_v1_12_3__IAI_v3_2_2",
+      artifact"Julia_v1_12_3__IAI_dev",
+      artifact"Julia_v1_12_4__IAI_v3_2_2",
+      artifact"Julia_v1_12_4__IAI_dev",
   )
 end
